@@ -147,3 +147,90 @@ NaN == NaN; // false
 另外,请注意 parseInt() | parseInt() | Number()三种转化成数值类型的区别
 
 ### string
+
+.length() // 获取字符串的长度
+
+字符串创建了之后就不能改变,每次更新字符串都要先销毁原来的字符串
+
+.toString() // 将值转化成字符串
+
+### object
+
+```js
+var o = new Object();
+```
+
+Object 的每个实例都有下列属性和方法
+
+-   constructor 保存用于创建当前对象的函数
+-   hasOwnProperty(propName) 检查给定的属性在**当前对象**(不是当前对象的原型)中是否存在
+
+```js
+o.hasOwnProperty("name");
+```
+
+-   isPrototypeOf(object) 判断传入对象是否是当前对象的原型
+-   proptyIsEnumerable(propName) 检查给定的属性是否可以枚举
+-   toLocaleString() 返回对象的字符串表示
+-   toString() 返回对象的字符串表示
+-   valueOf() 返回对象的字符串数值或布尔值表示
+
+## 操作符
+
+### 一元操作符
+
+```js
+// 执行前置递减和前置递增的负效应
+var age = 18;
+var num = 2;
+console.log(--age + num); // 19
+console.log(age-- + num); // 20
+console.log(~age); // -19
+```
+
+### 布尔操作符
+
+-   && 如果左边为真,则执行右边操作
+-   || 如果左边为真,则跳过右边操作,反之执行右边操作
+
+## 语句
+
+```js
+if() {
+    //
+} else {
+
+}
+
+do {
+
+} while ();
+
+while() {
+
+};
+
+for(var i = 0, len = xx.length; i < len; i++) {
+    //
+}
+
+for(var key in obj) {
+    //
+}
+
+switch() {
+    case xx:
+        //
+        break;
+    default:
+        //
+}
+```
+
+## 函数
+
+```js
+function func(arg1, arg2, ...) {
+    // arguments[]
+}
+```
