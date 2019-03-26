@@ -24,7 +24,7 @@ js 中一切都区分大小写
 启用严格模式,需要在整个脚本上方添加
 
 ```js
-"usr strict";
+"use strict";
 ```
 
 ### 语句
@@ -87,3 +87,63 @@ ECMAScript 中有五种基本的数据类型
 还有一种复杂数据类型
 
 -   Object
+
+### typeof
+
+对变量使用 typeof 可能会返回以下
+
+-   undefined 这个值未定义
+-   boolean 这个值是一个布尔值
+-   string 这个值是一个字符串
+-   number 这是一个数值
+-   object 这个值是对象或者 null
+-   function 这个值是一个函数
+
+> typeof 是一个操作符而非函数
+
+### undefined
+
+未声明或者声明时没有初始化的变量的值为 undefined
+,但是对未声明的值只能进行 typeof 操作
+
+```js
+var message;
+alert(message); // undefined
+alert(age); // 报错
+```
+
+### null
+
+null 类型表示一个空对象指针
+
+```js
+var message;
+alert(message == null); // true
+alert(message === null); // false
+```
+
+### boolean
+
+| 数据类型  | 转化为 true    | 转化为 false |
+| --------- | -------------- | ------------ |
+| Bollean   | true           | false        |
+| String    | 任何非空字符串 | ""           |
+| Number    | 任何非 0 数值  | 0 和 NaN     |
+| Object    | 任何对象       | null         |
+| undefined |                | undefined    |
+
+### number
+
+要注意一点,因为精度的问题
+会出现下面这种情况
+
+```js
+var a = 0.1;
+var b = 0.2;
+a + b == 0.3; // false
+NaN == NaN; // false
+```
+
+另外,请注意 parseInt() | parseInt() | Number()三种转化成数值类型的区别
+
+### string
