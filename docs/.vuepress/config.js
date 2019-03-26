@@ -38,6 +38,9 @@ module.exports = {
                 }, {
                     title: "基础",
                     path: "/jsDir/basis"
+                }, {
+                    title: "变量&作用域&内存",
+                    path: "/jsDir/scope&memory"
                 }]
             }],
             '/htmlDir/': [{
