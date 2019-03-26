@@ -1,10 +1,10 @@
 ---
 home: true
 heroImage: /js.png
-heroText: 技术栈
+heroText: Web技术栈
 tagline: 无他,唯手熟尔
 actionText: 快速开始 →
-actionLink: /dir/overview
+actionLink: /jsDir/overview
 features:
     - title: 简洁至上
       details: 深入阅读并且添加自己的想法。

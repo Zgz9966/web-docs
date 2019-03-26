@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Js',
+    title: 'Web修炼指南',
     description: 'code define life',
     markdown: {
         lineNumbers: true
@@ -12,21 +12,38 @@ module.exports = {
                 link: '/'
             },
             {
+                text: 'Core',
+                items: [{
+                        text: 'Html',
+                        link: '/htmlDir/overview'
+                    },
+                    {
+                        text: 'JavaScript',
+                        link: '/jsDir/overview'
+                    }
+                ]
+            },
+            {
                 text: 'Github',
                 link: 'https://github.com/yxbysxcoco'
             },
         ],
         sidebar: {
-            '/dir/': [{
-                title: '起步',
+            '/jsDir/': [{
+                title: 'Js起步',
                 collapsable: false,
                 children: [{
                     title: "概述",
-                    path: "/dir/overview"
+                    path: "/jsDir/overview"
                 }, {
                     title: "基础",
-                    path: "/dir/basis"
+                    path: "/jsDir/basis"
                 }]
+            }],
+            '/htmlDir/': [{
+                title: 'Html起步',
+                collapsable: false,
+                children: []
             }],
         }
     },
