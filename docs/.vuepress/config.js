@@ -41,6 +41,9 @@ module.exports = {
                 }, {
                     title: "变量&作用域&内存",
                     path: "/jsDir/scope&memory"
+                }, {
+                    title: "引用类型",
+                    path: "/jsDir/reference"
                 }]
             }],
             '/htmlDir/': [{
