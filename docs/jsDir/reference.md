@@ -191,3 +191,22 @@ nNum instanceof Number; // false
 ```
 
 ### String 类型
+
+-   length 返回字符串的长度
+-   charAt 返回在位置 1 的字符
+-   slice 一个参数时除去前几个字符 两个参数时截取 arg1 到 arg2 位置的字符
+-   substring 会把所有负值的参数转化成 0
+-   substr
+-   indexOf
+-   lastIndexOf
+-   trim 过滤所有空格
+
+## 单体内置对象
+
+### Global 对象
+
+终极兜底对象
+
+### Math 对象
+
+提供了一些数学公式方法

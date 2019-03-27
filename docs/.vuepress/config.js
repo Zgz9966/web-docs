@@ -44,6 +44,9 @@ module.exports = {
                 }, {
                     title: "引用类型",
                     path: "/jsDir/reference"
+                }, {
+                    title: "面向对象",
+                    path: "/jsDir/object"
                 }]
             }],
             '/htmlDir/': [{
