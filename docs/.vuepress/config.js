@@ -47,6 +47,9 @@ module.exports = {
                 }, {
                     title: "面向对象",
                     path: "/jsDir/object"
+                }, {
+                    title: "函数表达式",
+                    path: "/jsDir/function"
                 }]
             }],
             '/htmlDir/': [{
