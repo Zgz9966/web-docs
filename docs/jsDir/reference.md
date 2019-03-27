@@ -88,3 +88,106 @@ arr.lastIndexOf(4); // 5
 ```
 
 ### 迭代方法
+
+-   every
+-   fliter
+-   forEach
+-   map
+-   some
+
+### 归并方法
+
+-   reduce
+-   reduceRight
+
+## Date 类型
+
+-   Date.parse()
+-   Date.UTC()
+-   Date.now()
+-   ...
+
+## RegExp 类型
+
+-   g 全局,而非在发现第一个匹配项时停止
+-   i 表示不区分大小写
+-   m 表示多行模式
+-   . 表示末尾
+-   [] 表示一个组
+
+```js
+var re = new RepExp("cat", "i");
+re.test(string);
+re.exec(string); // 会含有index
+```
+
+## Function 类型
+
+```js
+var func = function() {
+    //
+};
+
+function func() {
+    //
+}
+```
+
+### 没有重载
+
+函数也是继承自 Object, 在 js 中万物皆引用, 所以如果使用类似重载的语法会覆盖掉之前的定义
+
+### 函数声明与函数表达式
+
+函数声明会有一个函数声明提升的过程,因此可以在脚本刚开始的时候就使用这个函数
+
+### 函数内部属性
+
+-   arguments
+-   this
+
+函数的 this 在定义的时候尚不明确,只有在调用的时候在知道,如下几种调用方式
+
+```js
+function func() {
+    console.log(this);
+}
+func(); // this --> window
+
+var p = new Object();
+p.f = func();
+p.f(); // this --> p
+```
+
+## 基本包装类型
+
+### Boolean 类型
+
+注意下面这几点区别
+
+```js
+var bObj = new Boolean(false);
+var bBool = false;
+
+typeof bObj; // object
+typeof bBool; // boolean
+bObj instanceof Boolean; // true
+bBool instanceof Boolean; // false
+```
+
+### Number 类型
+
+```js
+var num = new Number(10);
+num.toFixed(); // "10"
+
+var nObj = new Number(1);
+var nNum = 1;
+
+typeof nObj; // object
+typeof nNum; // boolean
+nObj instanceof Number; // true
+nNum instanceof Number; // false
+```
+
+### String 类型
