@@ -50,6 +50,9 @@ module.exports = {
                 }, {
                     title: "函数表达式",
                     path: "/jsDir/function"
+                }, {
+                    title: "BOM",
+                    path: "/jsDir/bom"
                 }]
             }],
             '/htmlDir/': [{

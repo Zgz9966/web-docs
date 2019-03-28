@@ -114,3 +114,32 @@ function Obj() {
     };
 })();
 ```
+
+### 模块模式
+
+-   模块模式是为单例创建私有变量和特权方法
+-   js 一般通过字面量来创建单例
+
+```js
+var singleO = {
+    name: "赵四"，
+    method: function() {
+
+    }
+}
+// 模块模式通过给单例添加私有变量和特权方法来使他增强
+var singleO = function() {
+    var privateName = "道格拉斯"
+
+    return {
+        publicName: "赵四",
+        publicMethod: function() {
+            return privateName
+        }
+    }
+}()
+```
+
+### 增强的模块模式
+
+-   通过将返回对象字面量的模块模式改为返回一个新创建的对象来达到模块模式的增强
