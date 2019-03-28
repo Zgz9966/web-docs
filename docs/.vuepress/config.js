@@ -53,6 +53,9 @@ module.exports = {
                 }, {
                     title: "BOM",
                     path: "/jsDir/bom"
+                }, {
+                    title: "客户端检测",
+                    path: "/jsDir/client"
                 }]
             }],
             '/htmlDir/': [{

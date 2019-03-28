@@ -119,3 +119,54 @@ function getQueryArgs() {
 ```
 
 ### 位置操作
+
+-   hash 在当前 url 末尾插入并跳转
+-   search 在当前末尾插入并跳转
+-   hostname 修改 url
+-   port 修改当前端口
+-   pathname 修改网址后面的路径
+-   replace 重定向到某页面,且后退健不可用
+-   reload 重载当前页面,如果给参数 true 则强制从服务器重载
+
+## navigator 对象
+
+这个对象通常用来检测网页的浏览器类型
+
+### 检测插件
+
+对于非 IE 浏览器可以通过 plugins 来检测特定的插件
+
+```js
+function hasPlugin(name) {
+    name = name.toLowerCase();
+    for (var i = 0; i < navigator.plugins.length; i++) {
+        if (navigator.plugins[i].name.toLowerCase().indexOf(name) > -1) {
+            return true;
+        }
+    }
+    return false;
+}
+// 检测IE中的插件
+function hasIEPlugin(name) {
+    try {
+        new ActiveXObject(name);
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+```
+
+### 注册处理程序
+
+-   registerContentHandler
+-   registerProtocolHandler
+
+## screen 对象
+
+一般用来包括像素宽度和高度等信息。
+
+## history 对象
+
+-   history.go()前进或者后退访问历史
+-   back | forward 前进后退一页
