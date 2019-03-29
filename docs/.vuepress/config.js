@@ -56,6 +56,9 @@ module.exports = {
                 }, {
                     title: "客户端检测",
                     path: "/jsDir/client"
+                }, {
+                    title: "DOM",
+                    path: "/jsDir/dom"
                 }]
             }],
             '/htmlDir/': [{

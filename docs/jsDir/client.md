@@ -20,3 +20,21 @@ function isSortable(object) {
 ## 用户代理检测
 
 争议最大的一种客户端检测技术叫做用户代理检测,一般在服务端通过检测用户代理字符串来确定用户使用的浏览器是一种常用且广为接受的做法
+
+### 编写呈现引擎
+
+```js
+var client = function() {
+    var engine = {
+        ie: 0,
+        gecko: 0,
+        webkit: 0,
+        khtml: 0,
+        opera: 0,
+        ver: null
+    };
+    return {
+        engine: engine
+    };
+};
+```
